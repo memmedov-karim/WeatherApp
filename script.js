@@ -79,72 +79,8 @@ form.addEventListener("submit", e => {
       `;
       li.innerHTML = markup;
       list.appendChild(li);
-      const detail = document.querySelectorAll(".detail");
-      const my_all = document.querySelectorAll(".my_all");
-      const detail_info = document.querySelectorAll(".detail_info");
-      const before = document.querySelectorAll(".before");
-      const city_name = document.querySelectorAll(".city_name");
-      // console.log(detail)
-      // detail.addEventListener("click",(e)=>{
-      //   console.log(name)
-      // })
-      for(let x of my_all){
-        console.log(x.children[2])
-        x.children[2].addEventListener("click",(e)=>{
-          if(x.children[2].innerHTML == "Detail"){
-            x.children[2].innerHTML = "ok";
-          }
-          else{
-            x.children[2].innerHTML = "Detail";
-
-          }
-          
-        })
-      }
       
-      for(let i=0;i<detail.length;i++){
-        // detail_info[i].style.display = "none";
-        // detail[i].addEventListener("click",(e)=>{
-          
-          
-          // if(detail[i].innerHTML == "Detail"){
-          //   if(detail.length % 2==0){
-              // if(i%2==0){
-              //   detail[i].innerHTML = "close"
-              // }
-              // detail[i].innerHTML = "close";
-              // detail[i].innerHTML = "close";
-              // before[i].style.display = "none";
-              // detail_info[i].style.display = "block";
-              
-            // }
-            // else{
-              // if(i%2 != 1){
-              //   detail[i].innerHTML = "close";
-
-              // }
-              
-              
-            // }
-            
-            
-
-
-          // }
-          // else{
-          //   if(detail.length % 2 == 0){
-          //     detail[i].innerHTML = "Detail";
-              // before[i].style.display = "block";
-              // detail_info[i].style.display = "none";
-
-            // }
-            
-            
-
-          // }
-          
-        // })
-      }
+      
     })
     .catch(() => {
       msg.textContent = "Please search for a valid city 😩";
